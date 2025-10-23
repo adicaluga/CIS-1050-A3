@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Zorin OS - Getting Started</title>
+        <link rel="stylesheet" href="webstyle.css" />
+    </head>
+    <body>
+        <!-- Creating a header class so we can add some header graphics -->
+        <header class="header-gettingstarted">
+            <div class="header-graphic">
+              <h1>Getting Started</h1>
+              <img src="zorin_logo.png" id="zorin_logo" alt="Zorin OS Logo" />
+              <p>Your guide to installing and customizing Zorin OS</p>
+            </div>
+            <nav>
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="one.html">Features</a></li>
+                <li><a href="two.html" class="active">Getting Started</a></li>
+              </ul>
+            </nav>
+          </header>
+        <main>
+            <section>
+                <!-- Installation guide chunk, splitting a bunch of paragraphs from eachother so I can add in images -->
+                <h2>Installation Guide</h2>
+                <p>To begin your journey in using Zorin OS, you will need to do a few things first:</p>
+                <ul class="installation-list">
+                  <li>Visit the <a href="https://zorin.com/os/" target="_blank">Zorin OS website</a> and click on "Download Zorin OS."</li>
+                  <li>Scroll down and click on "Download" under the Zorin OS Core section.</li>
+                  <li>Go to the <a href="https://www.balena.io/etcher/" target="_blank">Balena Etcher website</a> and click "Download" for your system.</li>
+                  <li>Ensure you have a USB drive with at least 4GB of storage.</li>
+                </ul>
+                <div class="image-container">
+                    <img src="download_buttons.png" alt="Download buttons" />
+                </div>
+                <p>
+                    Once you have downloaded the ISO file you need to create a
+                    bootable USB drive to have your computer boot into the Zorin OS. To do that you need to
+                    flash the ISO file into the USB drive using the Balena
+                    Etcher software.
+                </p>
+                <div class="image-container">
+                    <img src="flash.png" alt="Flashing Process" />
+                </div>
+                <p>
+                    Once you have successfully created the bootable USB using Balena Etcher, turn off your computer and boot into the BIOS or UEFI settings, 
+                    typically by pressing keys like F2, F12, or Del when your computer starts. In the settings, navigate to the Boot menu and select your USB 
+                    drive as the first boot device. Save your changes and exit; your computer should now boot directly from the Zorin OS USB.
+                </p>
+                <p>
+                    When you are booting from your USB drive, you are first greeted by a welcome page with two options: 
+                    "Try Zorin OS" and "Install Zorin OS." If you want to have a feel for Zorin OS before buying it, then you can simply choose "Try Zorin OS," 
+                    and otherwise select "Install Zorin OS" to proceed immediately with the setup.
+
+                </p>
+                <div class="image-container">
+                    <img src="try_zorin.png" alt="Try or install zorin Process" />
+                </div>
+                <p>
+                    Next, you will be prompted to choose your language, a specific keyboard layout, and network settings such that the computer 
+                    is able to connect to the internet. After you have established these settings, you will select an installation option. For most users, 
+                    "Erase disk and install Zorin OS" is ideal as it will provide you with a clean installation. But if you are an experienced user or you want 
+                    to dual-boot another OS (e.g., Windows), select "Something else," and you will get to do your partitions by hand. It will then begin copying 
+                    files to your hard drive. Meanwhile, you will get a chance to choose your geographical location for purposes of time-zones and to set up your user account, 
+                    your username, password, and computer name.
+                </p>
+                <div class="image-container">
+                    <img src="installation.png" alt="Installation Process" />
+                </div>
+                <p>
+                    As soon as you complete the installation, you will be asked to restart your computer. 
+                    Remove the USB drive while your computer is restarting to avoid booting in again. You will then greet the clean and 
+                    welcoming Zorin OS login screen on booting again after the reboot.
+                </p>
+            </section>
+            <section>
+                <!-- Post installation chunk -->
+                <h2>Post-Installation Setup</h2>
+                <p>
+                    Now that you've managed to successfully install Zorin OS onto your device, you can now go ahead and customize your 
+                    system to your liking. You can rearrange your desktop layout, install additional software from the Zorin OS Store, and tweak 
+                    system settings to fit your workflow for whatever you intend to use it for. There are just too many things that Zorin OS has to help you 
+                    personalize your desktop to your own uniqueness, from changing themes to shortcuts.
+
+                </p>
+                <div class="image-container">
+                    <img src="customization.png" alt="Customization Options" />
+                </div>
+            </section>
+            <section>
+                <h2>Troubleshooting & Tips</h2>
+                <p>
+                    If you do find yourself having trouble, don't worry. There are open forums on the official
+                    <a href="https://help.zorin.com/" target="_blank">Zorin website</a>
+                    and a troubleshooting section where common issues are dealt with and solutions given to set you straight. 
+                    From drivers installation to software updates, there are also plentiful tips on upgrading your Zorin OS available.
+                </p>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+            <p>Contact: acalugar@uoguelph.ca</p>
+            <p>&copy; 2025 Zorin OS Fan Site</p>
+        </footer>
+    </body>
+</html>

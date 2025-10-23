@@ -1,0 +1,211 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Using Segoe UI as the font family*/
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #2b2b2b, #3a3a3a);
+    color: #f0f0f0;
+    line-height: 1.6;
+    min-height: 100vh;
+    font-size: 20px;
+}
+
+/* Header Styles */
+header {
+    background: #1f1f1f;
+    padding: 20px 10%;
+    border-bottom: 2px solid #444;
+}
+
+.header-graphic {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header-graphic h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+}
+
+.header-graphic p {
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+header nav {
+    position: relative;
+    z-index: 2;
+  }
+  
+
+/* Putting in navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+/* Adding a hover style to each navigation piece */
+nav ul li a:hover,
+nav ul li a.active {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px 10%;
+}
+
+main section {
+    margin-bottom: 30px;
+}
+
+main section h2 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #e0e0e0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Footer */
+footer {
+    background: #1f1f1f;
+    padding: 10px 10%;
+    text-align: center;
+    border-top: 2px solid #444;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Custom 404 Error Page Style using a gradient */
+.error-page {
+    background: linear-gradient(to bottom, #2b2b2b, #4a4a4a);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.error-page main {
+    max-width: 600px;
+}
+
+.error-page a {
+    color: #f0f0f0;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* The Zorin OS logo that lies on every top right of each page */
+#zorin_logo {
+    position: absolute;
+    top: -5px;
+    left: -130px;
+    width: 150px;
+    height: auto;
+}
+
+
+/* Container for images */
+.image-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Adding a border and rounding it just a little bit */
+.image-container img {
+    max-width: 65%;
+    height: auto;
+    border: 2px solid #444;
+    border-radius: 5px;
+}
+
+/* Unordered list style for two.html */
+ul.installation-list {
+    margin-top: 7px;
+    margin-left: 40px;
+}
+
+
+/* HEADER BACKGROUND SECTION */
+.header-home,
+.header-features,
+.header-gettingstarted {
+  position: relative;
+  padding: 40px 10%;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Header graphic picture for each page */
+.header-home {
+  background: url("zorin_banner2.png") no-repeat center/cover;
+}
+.header-features {
+  background: url("zorin_appearance_menu3.png") no-repeat center/cover;
+}
+.header-gettingstarted {
+  background: url("zorin_boot_menu4.png") no-repeat center/cover;
+}
+
+/* Overlay for better text readability, and have a small tint aswell */
+.header-home::before,
+.header-features::before,
+.header-gettingstarted::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* This is to ensure header content appears above the overlay */
+.header-home .header-graphic,
+.header-features .header-graphic,
+.header-gettingstarted .header-graphic {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #f0f0f0;
+}
+
+
+
+/* Adding some responsive design so that it works on other devices */
+@media (max-width: 768px) {
+    header,
+    main,
+    footer {
+        padding: 20px 5%;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
